@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), IPostAdapter {
     }
 
     override fun onLikeClicked(postId: String) {
-
+        postDao.updateLikes(postId)
     }
 
 }
